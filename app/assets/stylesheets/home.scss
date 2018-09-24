@@ -1,22 +1,82 @@
 // Place all the styles related to the home controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
 .container {
-  width: 1366px;
+  width: 1000px;
   margin: 0 auto;
+  font-family: sans-serif;
+  min-height: 100%;
+  position: relative;
+//  
+//  padding-left: 20px;
 }
 
 .header {
-  height: 200px;
-  background: #CCCCCC;
+  height: 100px;
+  background-color: lightgray;
+  position: relative;
+}
+
+.menu {
+  float: left;
+  padding-left: 20px;
+  position: absolute;
+  bottom: 10px;
+}
+
+.menu li{
+  list-style-type: none;
+  display: inline-block;
+}
+
+.menu a {
+  text-decoration: none;
+  padding-right: 20px;
+  color: black;
+  font-size: 18px;
+}
+
+.menu a:hover {
+  color: white;
+}
+
+
+.main {
+  padding-left: 20px;
+  padding-top: 20px;
+  padding-bottom: 120px;
+}
+
+.main img {
+  float: left;
+}
+
+.clr {
+  clear: both;
 }
 
 .footer {
-  height: 200px;
-  background: #111111;
+//  padding: 20px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+  background-color: lightgrey;
 }
 
-.main {
-  background-image: url(slider-img.jpg);
-  height: 800px;
+.footer p {
+  margin: 20px;
 }
+
+
