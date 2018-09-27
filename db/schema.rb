@@ -18,9 +18,9 @@ ActiveRecord::Schema.define(version: 2018_09_27_150738) do
   create_table "users", force: :cascade do |t|
     t.string "name"
     t.string "email"
-    t.boolean "moderator"
-    t.boolean "creator"
-    t.boolean "banned"
+    t.boolean "moderator", default: false
+    t.boolean "creator", default: false
+    t.boolean "banned", default: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["email"], name: "index_users_on_email", unique: true
