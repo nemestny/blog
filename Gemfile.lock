@@ -80,6 +80,7 @@ GEM
     duktape (2.0.1.0)
     erubi (1.7.1)
     execjs (2.7.0)
+    ffaker (2.10.0)
     ffi (1.9.25-x64-mingw32)
     ffi (1.9.25-x86-mingw32)
     globalid (0.4.1)
@@ -213,6 +214,7 @@ DEPENDENCIES
   coffee-rails (~> 4.2)
   dotenv-rails (~> 2.5)
   duktape
+  ffaker (~> 2.10)
   html2slim (~> 0.2.0)
   jbuilder (~> 2.5)
   pg (>= 0.18, < 2.0)
