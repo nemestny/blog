@@ -40,7 +40,7 @@ hash_commentaries = 200.times.map do
   commentable = ((rand(2) == 1) ? posts : users).sample
   {
     body: FFaker::HipsterIpsum.paragraphs,
-    user_id: users.sample,
+    user: users.sample,
     commentable_id: commentable.id,
     commentable_type: commentable.class.to_s
   }
