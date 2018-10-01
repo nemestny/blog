@@ -1,11 +1,15 @@
 h1 Это что-то вроде блога
 
-- Post.all.each do |post|
+- posts = Post.where(user_id: User.where(moderator: true).ids)
+- posts.each do |post|
   div
     h2
       = post.title
     h4
       = post.user.name
+    h1
+      | Moderator? - 
+      = post.user.moderator
     p 
       = post.body
     div.comment
