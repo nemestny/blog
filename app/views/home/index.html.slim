@@ -1,13 +1,22 @@
-h1 Это что-то вроде блога
+h1 Способ первый
+
+- posts = User.where(moderator: true).map {|user| user.posts}.flatten
+- posts.each do |post|
+  h2
+    =post.id
+
+h1 Способ второй
 
 - posts = Post.where(user_id: User.where(moderator: true).ids)
 - posts.each do |post|
   div
     h2
+      = post.id
+    h3
       = post.title
     h4
       = post.user.name
-    h1
+    h2
       | Moderator? - 
       = post.user.moderator
     p 
