@@ -61,3 +61,9 @@ gem "slim-rails", "~> 3.1"
 gem "html2slim", "~> 0.2.0"
 
 gem "dotenv-rails", "~> 2.5"
+
+gem "ffaker", "~> 2.10"
+
+gem "rails-erd", "~> 1.5"
+
+gem 'awesome_print', '~> 1.8'
