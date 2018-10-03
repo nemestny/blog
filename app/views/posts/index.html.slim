@@ -16,7 +16,7 @@ table
       tr
         td = post.title
         td = post.body
-        td = post.user.references
+        td = post.user.name
         td = post.visible
         td = link_to 'Show', post
         td = link_to 'Edit', edit_post_path(post)
