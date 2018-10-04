@@ -3,6 +3,7 @@ h1 Listing posts
 table
   thead
     tr
+      th #
       th Title
       th Body
       th User.references
@@ -14,6 +15,7 @@ table
   tbody
     - @posts.each do |post|
       tr
+        td: b = post.id
         td = post.title
         td = post.body
         td: b = post.user.name
@@ -21,6 +23,8 @@ table
         td = link_to 'Show', post
         td = link_to 'Edit', edit_post_path(post)
         td = link_to 'Destroy', post, data: { confirm: 'Are you sure?' }, method: :delete
+p
+  = paginate @posts
 
 br
 

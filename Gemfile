@@ -67,3 +67,5 @@ gem "ffaker", "~> 2.10"
 gem "rails-erd", "~> 1.5"
 
 gem 'awesome_print', '~> 1.8'
+
+gem "kaminari", "~> 1.1"
