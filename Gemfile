@@ -43,6 +43,8 @@ end
 group :development do
   # Access an interactive console on exception pages or by calling 'console' anywhere in the code.
   gem 'web-console', '>= 3.3.0'
+  gem "jquery-rails", "~> 4.3"
+  gem "xray-rails", "~> 0.3.1"
 end
 
 group :test do
@@ -67,3 +69,6 @@ gem "ffaker", "~> 2.10"
 gem "rails-erd", "~> 1.5"
 
 gem 'awesome_print', '~> 1.8'
+
+gem "kaminari", "~> 1.1"
+

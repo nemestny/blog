@@ -12,9 +12,11 @@ html
       .header
         ul.menu
           li 
-            a> href='/' Главная страница
+            = link_to 'Главная страница', root_path
+          li
+            = link_to 'Посты', posts_path
           li 
-            a> href='/about' О нас
+            = link_to 'О нас', about_path
       .main
         = yield
       .footer
