@@ -14,15 +14,7 @@ table
 
   tbody
     - @posts.each do |post|
-      tr
-        td: b = post.id
-        td = post.title
-        td = post.body
-        td: b = post.user.name
-        td = post.visible
-        td = link_to 'Show', post
-        td = link_to 'Edit', edit_post_path(post)
-        td = link_to 'Destroy', post, data: { confirm: 'Are you sure?' }, method: :delete
+      = render post
 p
   = paginate @posts
 
