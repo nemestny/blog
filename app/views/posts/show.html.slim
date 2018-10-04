@@ -8,18 +8,20 @@ p
   = @post.body
 p
   strong User:
-  = @post.user
+  = link_to @post.user.name, user_path(@post.user)
 p
   strong Visible:
   = @post.visible
 p
   strong Comments:
   table
-    - @post.comments.order(:created_at).each do |comment|
+    - @comments.order(:created_at).each do |comment|
       tr
         td: b = comment.user.name
         td = comment.body
         td = comment.created_at
+p
+  = paginate @comments
 
 => link_to 'Edit', edit_post_path(@post)
 '|
