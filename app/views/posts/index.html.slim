@@ -6,15 +6,14 @@ table
       th #
       th Title
       th Body
-      th User.references
+      th User
       th Visible
       th
       th
       th
 
   tbody
-    - @posts.each do |post|
-      = render post
+    = render partial: 'post', collection: @posts
 p
   = paginate @posts
 
