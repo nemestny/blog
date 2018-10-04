@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :users
   resources :posts#, only: [:index, :show]
   get 'home(/:hello)', to: 'home#index' # скобки обозначают необязательность
   root 'home#index'
