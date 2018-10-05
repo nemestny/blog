@@ -1,25 +1,7 @@
 p#notice = notice
+= render @post
+= render partial: 'comment', collection: @comments
 
-p
-  strong Title:
-  = @post.title
-p
-  strong Body:
-  = @post.body
-p
-  strong User:
-  = link_to @post.user.name, user_path(@post.user)
-p
-  strong Visible:
-  = @post.visible
-p
-  strong Comments:
-  table
-    - @comments.order(:created_at).each do |comment|
-      tr
-        td: b = comment.user.name
-        td = comment.body
-        td = comment.created_at
 p
   = paginate @comments
 
