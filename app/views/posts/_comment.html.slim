@@ -1,0 +1,10 @@
+.comment
+  .comment_body
+    = comment.body
+  .comment_footer
+    span.left_span
+      |Написал&nbsp
+      = link_to comment.user.name, comment.user
+      |&nbsp
+      = comment.created_at
+  .cls
