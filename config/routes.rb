@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  devise_for :users
   resources :users
   resources :posts#, only: [:index, :show]
   get 'home(/:hello)', to: 'home#index' # скобки обозначают необязательность
