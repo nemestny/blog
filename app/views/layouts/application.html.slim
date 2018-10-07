@@ -9,18 +9,9 @@ html
     = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
   body
     .container
-      .header
-        ul.menu
-          li 
-            = link_to 'Главная страница', root_path
-          li
-            = link_to 'Посты', posts_path
-          li
-            = link_to 'Пользователи', users_path
-          li 
-            = link_to 'О нас', about_path
-      .main
+      =render 'shared/header'
+      main
         = yield
-      .footer
+      footer
         p
           | Все права защищены &copy 2018

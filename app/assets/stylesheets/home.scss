@@ -21,7 +21,7 @@ body {
 //  padding-left: 20px;
 }
 
-.header {
+header {
   height: 100px;
   background-color: lightgray;
   position: relative;
@@ -51,13 +51,13 @@ body {
 }
 
 
-.main {
+main {
   padding-left: 20px;
   padding-top: 20px;
   padding-bottom: 120px;
 }
 
-.main img {
+main img {
   float: left;
 }
 
@@ -65,7 +65,7 @@ body {
   clear: both;
 }
 
-.footer {
+footer {
 //  padding: 20px;
   position: absolute;
   left: 0;
@@ -75,7 +75,7 @@ body {
   background-color: lightgrey;
 }
 
-.footer p {
+footer p {
   margin: 20px;
 }
 
