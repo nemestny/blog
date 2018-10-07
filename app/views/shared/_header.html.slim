@@ -8,6 +8,7 @@ header
       = link_to 'Пользователи', users_path
     li 
       = link_to 'О нас', about_path
+  ul.menu#menu_session
     - if user_signed_in?
       li
         |Hello, #{current_user.email}
@@ -18,3 +19,4 @@ header
         = link_to 'Log in', new_user_session_path
       li 
         = link_to 'Register', new_user_registration_path
+  .cls
