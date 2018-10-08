@@ -72,3 +72,5 @@ gem 'awesome_print', '~> 1.8'
 
 gem "kaminari", "~> 1.1"
 
+
+gem "devise", "~> 4.5"
