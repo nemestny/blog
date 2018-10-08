@@ -1,3 +1,6 @@
 ru:
   label:
     log_in: Вход
+    log_out: Выход
+    hello: Привет, %s
+    register: Регистрация
