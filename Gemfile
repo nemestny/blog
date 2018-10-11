@@ -74,3 +74,5 @@ gem "kaminari", "~> 1.1"
 
 
 gem "devise", "~> 4.5"
+
+gem "webpacker", "~> 3.5"
