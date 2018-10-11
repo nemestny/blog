@@ -1,7 +1,7 @@
 h1 Listing posts
 = render partial: 'post', collection: @posts
 p
-  = paginate @posts
+  = paginate @posts, class: 'pagination'
 
 br
 

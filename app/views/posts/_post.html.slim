@@ -1,10 +1,10 @@
-.post
-  .post_title
-    h2
+.card
+  .card-body
+    h5.card-title
       = link_to post.title, post
-  .post_body
-    = post.body
-  .post_footer
+    p.card-text
+      = post.body
+  .card-footer.text-muted
     span.left_span
       |Написал&nbsp
       = link_to post.user.name, post.user
@@ -19,4 +19,3 @@
       = link_to 'Edit', edit_post_path(post)
       |&nbsp
       = link_to 'Destroy', post, data: { confirm: 'Are you sure?' }, method: :delete
-  .cls
