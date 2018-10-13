@@ -9,3 +9,8 @@
 
 import "init";
 import "components/page/page";
+
+window.onload = function() {
+  const Rails = require('rails-ujs');
+  Rails.start();
+}
