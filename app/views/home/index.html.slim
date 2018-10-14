@@ -1,4 +1,9 @@
-h1 Добро пожаловать!
-
-= render  "components/page/page" do
-  p.alert.alert-success Hello from our first component!
+.jumbotron
+  h1.display-4
+    |Добро пожаловать!
+  p.lead
+    |Это деплой на хероку домашней работы Носкова Александра
+  hr.my-4
+  p
+    |Как ни странно, в изначальном виде, с вебпакером, задеплоилось без проблем.
+  = link_to 'Ссылка на GitHub', 'https://github.com/nemestny/blog', class: 'btn btn-primary btn-lg'
